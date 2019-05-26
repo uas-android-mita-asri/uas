@@ -14,8 +14,6 @@ public interface RegisterAPI {
                        @Field("kelas") String kelas,
                        @Field("sesi") String sesi);
 
-
-
     @GET("/view.php")
     Call<Value> view();
 
@@ -25,4 +23,12 @@ public interface RegisterAPI {
                      @Field("nama") String nama,
                      @Field("kelas") String kelas,
                      @Field("sesi") String sesi);
+
+    @FormUrlEncoded
+    @POST("delete.php")
+    Call<Value> hapus(@Field("npm") String npm);
+
+    @FormUrlEncoded
+    @POST("search.php")
+    Call<Value> search(@Field("search") String search);
 }
