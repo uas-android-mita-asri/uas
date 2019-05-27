@@ -11,6 +11,12 @@
     android:orientation="vertical"
     tools:context="com.mitakartinasari.uasbisa.UpdateActivity">
 
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo" />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -24,6 +30,7 @@
             android:cursorVisible="false"
             android:focusable="false"
             android:focusableInTouchMode="false"
+            android:layout_marginTop="28dp"
             android:hint="@string/npm"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -37,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
+
             android:hint="@string/name"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -87,6 +95,8 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorButton"
+        android:textColor="@color/colorText"
         android:text="UBAH"/>
 
 </LinearLayout>
