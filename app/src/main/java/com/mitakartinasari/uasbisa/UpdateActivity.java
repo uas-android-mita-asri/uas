@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class UpdateActivity extends AppCompatActivity {
 
-    public static final String URL = "http://sulistiyanto.000webhostapp.com/";
+    public static final String URL = "http://mitasri.000webhostapp.com/";
     private RadioButton radioSexButton;
     private ProgressDialog progress;
 

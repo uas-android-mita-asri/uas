@@ -8,13 +8,13 @@ import retrofit2.http.POST;
 
 public interface RegisterAPI {
     @FormUrlEncoded
-    @POST("/insert.php")
+    @POST("insert.php")
     Call<Value> daftar(@Field("npm") String npm,
                        @Field("nama") String nama,
                        @Field("kelas") String kelas,
                        @Field("sesi") String sesi);
 
-    @GET("/view.php")
+    @GET("view.php")
     Call<Value> view();
 
     @FormUrlEncoded

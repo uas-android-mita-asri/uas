@@ -23,7 +23,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ViewActivity extends AppCompatActivity implements SearchView.OnQueryTextListener{
-    public static final String URL = "http://sulistiyanto.000webhostapp.com/";
+    public static final String URL = "http://mitasri.000webhostapp.com/";
     private List<Result> results = new ArrayList<>();
     private RecyclerViewAdapter viewAdapter;
 
@@ -36,7 +36,7 @@ public class ViewActivity extends AppCompatActivity implements SearchView.OnQuer
         setContentView(R.layout.activity_view);
         ButterKnife.bind(this);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Daftar Mahasiswa Praktikum");
+        getSupportActionBar().setTitle("Daftar Mahasiswa");
 
         viewAdapter = new RecyclerViewAdapter(this, results);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
